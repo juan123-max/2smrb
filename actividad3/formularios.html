@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <!-- Formulario de registro de datos -->
+        <form target="blank" method="post">
+            <fieldset>
+            <legend>Datos personales</legend>
+            <p>    
+                <label for="txtNombre">Nombre</label>
+                <input type="text" id="txtNombre" name="txtNombre" required autofocus>
+            </p>
+            <p>
+                <label for="Correo">Correo Electrónico</label>
+                <input type="email" name="txtemail" id="txtemail" required>
+            </p>
+            <p>
+                <label for="txtURL">URL:</label>
+                <input type="url" id="txtURL" name="txtURL" placeholder="Inserta tu páguina Web">
+            </p>
+            <p>
+                <label for="sCiudad">Ciudad</label>
+                <select id="sCiudad" name="sCiudad">
+                    <option value="CO">CÓRDOBA</option>
+                    <option value="SE" selected>SEVILLA</option>
+                    <option value="HU">HUELVA</option>
+                    <option value="GR">GRANADA</option>
+                    <option value="MA">MÁLAGA</option>
+                    <option value="AL">ALMERIA</option>
+                    <option value="CA">CÁDIZ</option>
+                    <option value="JA">JAÉN</option>
+                </select>    
+            </p>
+            </fieldset>    
+            <fieldset>
+                <legend>Otros datos</legend>
+                <p>    
+                    <label for="txtFecha">Fecha:</label>
+                    <input type="date" id="txtFecha" name="txtFecha">
+                </p>
+                <p>    
+                    <label for="txtTiempo">Tiempo:</label>
+                    <input type="time" id="txtTiempo" name="txtTiempo">
+                </p>
+                <p>    
+                    <label for="txtFYH">Fecha y Hora:</label>
+                    <input type="datetime-local" id="txtFYH" name="txtFYH">
+                </p>
+                <p>    
+                    <label for="txtMes">Mes:</label>
+                    <input type="month" id="txtMes" name="txtMes">
+                </p>
+                <p>    
+                    <label for="txtSemana">Semana:</label>
+                    <input type="week" id="txtSemana" name="txtSemana">
+                </p>
+                <p>    
+                    <label for="txtNúmero">Número (min -10, max 10):</label>
+                    <input type="number" id="txtNúmero" name="txtNúmero" min="-10" max="10" value="0">
+                </p>
+                <p>    
+                    <label for="txtTeléfono">Teléfono:</label>
+                    <input type="tel" id="txtTeléfono" name="txtTeléfono">
+                </p>
+                <p>    
+                    <label for="txtTB">Término de búsqueda:</label>
+                    <input type="search" id="txtTB" name="txtTB">
+                </p>
+                <p>    
+                    <label for="txtCF">Color favorito:</label>
+                    <input type="color" id="txtCF" name="txtCF">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Otros controles</legend>
+                <p>    
+                    Aficiones
+                    <input type="checkbox" name="chkAficion1">
+                    <label>Cine</label>
+                    <input type="checkbox" name=chkAficion2>
+                    <label>Deporte</label>
+                </p>
+                    Forma de pago<br>
+                    <input type="radio" name="optPago" value="V"> Visa
+                    <input type="radio" name="optPago" value="A"> American Express
+                    <input type="radio" name="optPago" value="M"> Master Card
+            </fieldset>
+            <p>
+                Password:
+                <input type="password" maxlength="10" minlength="6" required>
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Borrar">
+        </form>
+    </body>
+</html>
