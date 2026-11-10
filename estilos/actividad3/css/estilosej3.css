@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+
+
+body{
+	background-color: lightyellow;
+	margin: 0 auto;
+	max-width: 1100px;
+}
+
+
+
+header h1{
+	color: blue;
+	text-align: center;
+	font-family: Audiowide;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:pink;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: red;
+}
+
+#destacado{
+	background-color: #ffffb2;
+	border: 2px dashed orange;
+	padding: 4px;
+}
+
+.caja{
+	border: 3px solid blue;
+	position: relative;
+  	display: flex;
+  	justify-content: space-between;
+  	gap: 20px;
+  
+  
+}
